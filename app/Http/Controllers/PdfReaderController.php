@@ -17,9 +17,9 @@ class PdfReaderController extends Controller
 
 				// case censitive
 				if(strpos(strtolower($text), strtolower($request->word))){
-					return "'".$request->word."' Ditemukan";
+					return "'".$request->word."' Found";
 				}else{
-					return "'".$request->word."' Tidak Ditemukan";
+					return "'".$request->word."' Not Found";
 				}
 			}catch(Exception $e){
 				return "Operation Failed";
